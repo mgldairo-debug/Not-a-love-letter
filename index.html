@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Miks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="flower-container lily" aria-hidden="true">
+        <svg class="lily-svg" viewBox="0 0 220 250" focusable="false">
+          <defs>
+            <linearGradient id="petalSoft" x1="64" y1="34" x2="150" y2="136" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fffdf6" />
+              <stop offset="0.47" stop-color="#ffd9d8" />
+              <stop offset="1" stop-color="#df7680" />
+            </linearGradient>
+            <linearGradient id="petalWarm" x1="110" y1="21" x2="110" y2="139" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#fffdf6" />
+              <stop offset="0.56" stop-color="#ffc9d0" />
+              <stop offset="1" stop-color="#d95d70" />
+            </linearGradient>
+            <linearGradient id="stemGreen" x1="100" y1="105" x2="112" y2="239" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8bc37d" />
+              <stop offset="1" stop-color="#34745e" />
+            </linearGradient>
+          </defs>
+
+          <path class="svg-stem" d="M111 126C108 160 106 196 104 235" />
+          <path class="svg-leaf leaf-one" d="M104 178C77 177 54 195 38 223C67 219 93 203 104 178Z" />
+          <path class="svg-leaf leaf-two" d="M114 166C138 157 160 162 179 181C153 188 130 183 114 166Z" />
+
+          <g class="svg-bloom">
+            <path class="svg-petal-fill" d="M111 135C77 128 50 106 44 74C40 51 55 33 80 42C96 48 105 69 111 98C117 69 126 48 142 42C167 33 182 51 178 74C172 106 145 128 111 135Z" />
+            <path class="svg-petal petal-a" d="M108 126C82 112 60 92 48 57C78 47 100 67 108 126Z" />
+            <path class="svg-petal petal-b" d="M114 126C140 112 162 92 174 57C144 47 122 67 114 126Z" />
+            <path class="svg-petal petal-c" d="M111 132C91 101 90 56 111 20C132 56 131 101 111 132Z" />
+            <path class="svg-petal petal-d" d="M111 132C75 126 52 101 56 61C88 64 108 90 111 132Z" />
+            <path class="svg-petal petal-e" d="M111 132C147 126 170 101 166 61C134 64 114 90 111 132Z" />
+            <path class="svg-vein" d="M111 38C111 67 111 97 111 128" />
+            <path class="svg-vein" d="M68 67C84 82 99 105 108 130" />
+            <path class="svg-vein" d="M154 67C138 82 123 105 114 130" />
+            <path class="svg-stamen stamen-a" d="M111 127C105 101 100 77 97 54" />
+            <path class="svg-stamen stamen-b" d="M111 127C111 98 111 72 111 48" />
+            <path class="svg-stamen stamen-c" d="M111 127C117 101 122 77 125 54" />
+            <circle class="svg-anther" cx="97" cy="54" r="5" />
+            <circle class="svg-anther" cx="111" cy="48" r="5" />
+            <circle class="svg-anther" cx="125" cy="54" r="5" />
+          </g>
+        </svg>
+      </div>
+
+      <h1>For Miks</h1>
+
+      <button id="letterButton" class="letter-button" aria-expanded="false" aria-controls="letterContent">
+        <span class="button-label">Open mail</span>
+      </button>
+
+      <div id="letterContent" class="letter-content" hidden>
+        <div class="paper-wrap">
+          <div class="paper-sheet">
+            <div class="paper-crease" aria-hidden="true"></div>
+            <p>Dear Miks/Baby,</p>
+            <div class="message-space">
+              <p>Hellooo baby though you're not really my baby anymore, I just wanted to say na I miss you malala, I know I know, I won't disturb you anymore yes and I respect your decision, pero sana wagg  madamay yung streak natin sa TikTok T_T anyways, I hope na you're okay everyday and happy and always safe. If you need me, I'm here po and i'll wait till you've come back home. Goodnight my baby!! P.S baka buggy sa phone tong website so yea,,, sorry ;w;<p></p> 
+            </div>
+          </div>
+        </div>
+
+        <button id="moreButton" class="more-button" type="button" aria-expanded="false" aria-controls="moreContent">
+          Click here for more
+        </button>
+
+        <div id="moreContent" class="more-content" hidden>
+          <div id="heartMessage" class="heart-message" aria-label="I miss you">
+            <svg class="heart-art" viewBox="0 0 320 300" aria-hidden="true" focusable="false">
+              <defs>
+                <clipPath id="heartClip">
+                  <path d="M160 283C65 205 20 160 20 98C20 52 52 24 94 24C123 24 146 40 160 67C174 40 197 24 226 24C268 24 300 52 300 98C300 160 255 205 160 283Z" />
+                </clipPath>
+              </defs>
+              <g id="heartText" class="heart-text" clip-path="url(#heartClip)"></g>
+              <path class="heart-outline" d="M160 283C65 205 20 160 20 98C20 52 52 24 94 24C123 24 146 40 160 67C174 40 197 24 226 24C268 24 300 52 300 98C300 160 255 205 160 283Z" />
+              <rect class="heart-hole" x="92" y="123" width="136" height="54" rx="27" />
+            </svg>
+            <p>I MISS YOU</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
